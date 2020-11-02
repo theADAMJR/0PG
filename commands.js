@@ -5,7 +5,7 @@ module.exports.play = async function(msg, ...query) {
   const vc = msg.member.voice.channel;
 
   const connection = await vc.join();
-  const video = await findVideo(query.join());
+  const video = await findVideo(query.join(' '));
 
   if (video) {
     const stream = downloadYT(video.url, { filter: 'audioonly' });
