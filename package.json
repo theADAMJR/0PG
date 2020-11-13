@@ -1,0 +1,17 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "2pg-music": "^1.1.2",
+    "discord.js": "^12.4.1"
+  }
+}
